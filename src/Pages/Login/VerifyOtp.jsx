@@ -1,5 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import Button from "../../Components/Button/Button";
+import Logo from "../../assets/Images/logo1.png";
+import Background from '../../assets/Images/loginbg1.png'
 
 const VerifyOtp = () => {
   const [seconds, setSeconds] = useState(55);
@@ -37,13 +39,13 @@ const VerifyOtp = () => {
   return (
     <div
       className="relative h-screen bg-cover bg-center"
-      style={{ backgroundImage: `url()` }}
+      style={{ backgroundImage: `url(${Background})` }}
     >
       <div className="absolute inset-0 bg-black bg-opacity-70" />
 
       <div className="relative z-10 flex items-center justify-center h-full">
         <div className="bg-white rounded-lg shadow-lg w-11/12 max-w-md p-8 text-center space-y-6">
-          <img src="" alt="Logo" className="w-24 h-24 mx-auto mb-4" />
+          <img src={Logo} alt="Logo" className="w-24 h-24 mx-auto mb-4" />
 
           <h1 className="text-3xl font-semibold text-gray-800 mb-2">
             Verify Your Details

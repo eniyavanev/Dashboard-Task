@@ -1,17 +1,19 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Button from "../../Components/Button/Button";
+import Logo from "../../assets/Images/logo1.png";
+import Background from '../../assets/Images/loginbg1.png'
 
 const LoginLanding = () => {
   return (
     <div
       className="relative h-screen bg-cover bg-center"
-      style={{ backgroundImage: "url(your-image-url)" }}
+      style={{ backgroundImage: `url(${Background})` }}
     >
       <div className="absolute inset-0 bg-black bg-opacity-70" />
       <div className="relative z-10 flex items-center justify-center h-full">
         <div className="bg-white rounded-lg shadow-lg w-11/12 max-w-md p-8 text-center space-y-6">
-          <img src="" alt="Logo" className="w-[90px] h-[90px] mx-auto mb-6" />
+          <img src={Logo} alt="Logo" className="w-[90px] h-[90px] mx-auto mb-6" />
           <h1 className="text-4xl font-bold text-gray-800 mb-4">
             Grow your Business Exponentially!
           </h1>

@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import Button from "../../Components/Button/Button";
 import { stores } from "../../Components/Data/Data";
 
+import Background from '../../assets/Images/loginbg1.png'
+
+
 const Store = () => {
   const [selectedStore, setSelectedStore] = useState(null);
 
@@ -14,9 +17,11 @@ const Store = () => {
   return (
     <div
       className="relative h-screen bg-cover bg-center"
-      style={{ backgroundImage: `url()` }}
+      style={{ backgroundImage: `url(${Background})` }}
     >
-      <div className="absolute inset-0 bg-black bg-opacity-60"></div>
+      <div className="absolute inset-0 bg-black bg-opacity-60">
+        
+      </div>
 
       <div className="relative z-10 flex items-center justify-center h-full">
         <div className="bg-white rounded-xl shadow-xl w-11/12 sm:w-96 p-8 text-center space-y-6">
@@ -37,6 +42,7 @@ const Store = () => {
                     : "border-gray-300"
                 }`}
               >
+                <img src={store.image} alt=""  className="w-14 h-14 rounded-md"/>
                 <div className="flex-grow">
                   <h3 className="text-lg font-semibold text-gray-800">
                     {store.name}

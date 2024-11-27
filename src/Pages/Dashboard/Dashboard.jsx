@@ -1,8 +1,8 @@
-// src/Pages/Dashboard/Dashboard.js
 import React, { useState } from "react";
 import Sidebar from "../../Components/Sidebar/Sidebar";
 import Header from "../../Components/Header/Header";
-import SlideAction from "../../Components/SlideAction/SlideAction";
+import Contents from "../Contents/Contents";
+
 
 const Dashboard = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -11,28 +11,16 @@ const Dashboard = () => {
   const closeSidebar = () => setIsSidebarOpen(false);
 
   return (
-    <div className="flex">
+    <div className="flex bg-gray-200 shadow-lg">
       <Sidebar isOpen={isSidebarOpen} closeSidebar={closeSidebar} />
       <div className="flex-1 flex flex-col">
         <Header toggleSidebar={toggleSidebar} />
-        <main className=" mt-[70px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          <SlideAction />
-        </main>
+        <main >
+          <Contents/>
+          </main>
       </div>
     </div>
   );
 };
 
 export default Dashboard;
-
-
-
-
- 
- 
-
- 
-
-
- 
-

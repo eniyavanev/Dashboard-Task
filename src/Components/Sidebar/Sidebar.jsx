@@ -9,7 +9,7 @@ const Sidebar = ({ isOpen, closeSidebar }) => {
     <div
       className={`${
         isOpen ? "block" : "hidden"
-      }  md:block absolute md:static bg-gray-50 h-screen w-[80%] md:w-1/4 lg:w-1/5 px-6 py-[40%] md:py-[10%] font-inter shadow-lg`}
+      } md:block absolute md:static bg-gray-50 min-h-screen w-[80%] md:w-1/4 lg:w-1/5 px-6 py-[40%] md:py-[10%] font-inter shadow-lg`}
     >
       <button
         onClick={closeSidebar}

@@ -14,7 +14,7 @@ const Header = ({ toggleSidebar }) => {
           <i> rewadify</i>
         </h1>
         <h2 className="hidden md:flex text-xl md:text-2xl font-bold text-center md:text-left">
-          Welcome, Rajesh👋
+          Welcome,Eniyavan👋
         </h2>
 
         <ul className="flex items-center justify-center space-x-4 md:space-x-8">
